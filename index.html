@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Quiz App</title>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-violet-500 p-4">
+
+    <!-- Main Card -->
+    <div class="w-full max-w-2xl bg-white shadow-2xl rounded-3xl p-6 sm:p-8 border border-purple-100">
+
+        <!-- Heading -->
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-purple-700 border-b border-purple-200 pb-4">
+            Simple Quiz App
+        </h1>
+
+        <!-- Quiz Section -->
+        <div class="quiz mt-8">
+
+            <!-- Question -->
+            <h2 id="question"
+                class="text-lg sm:text-2xl font-semibold text-gray-700 leading-relaxed text-center">
+                Question goes here
+            </h2>
+
+            <!-- Answers -->
+            <div id="answer-button" class="grid grid-cols-1 gap-4 mt-8">
+
+                <button
+                    class="btn w-full bg-gradient-to-r from-violet-400 to-purple-500 hover:from-violet-500 hover:to-purple-600 text-white font-medium py-3 px-4 rounded-xl shadow-md transition duration-300">
+                    Answer 1
+                </button>
+
+                <button
+                    class="btn w-full bg-gradient-to-r from-pink-400 to-rose-500 hover:from-pink-500 hover:to-rose-600 text-white font-medium py-3 px-4 rounded-xl shadow-md transition duration-300">
+                    Answer 2
+                </button>
+
+                <button
+                    class="btn w-full bg-gradient-to-r from-sky-400 to-cyan-500 hover:from-sky-500 hover:to-cyan-600 text-white font-medium py-3 px-4 rounded-xl shadow-md transition duration-300">
+                    Answer 3
+                </button>
+
+                <button
+                    class="btn w-full bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 text-white font-medium py-3 px-4 rounded-xl shadow-md transition duration-300">
+                    Answer 4
+                </button>
+
+            </div>
+
+            <!-- Next Button -->
+            <div class="flex justify-center mt-8">
+                <button id="next-btn"
+                    class="bg-gradient-to-r from-orange-400 to-amber-500 hover:from-orange-500 hover:to-amber-600 text-white font-semibold py-3 px-10 rounded-xl shadow-lg transition duration-300">
+                    Next
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
